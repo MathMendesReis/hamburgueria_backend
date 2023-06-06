@@ -1,9 +1,9 @@
 export interface outputSnacks{
-    id: string,
+    id: number,
     snack: string,
     name: string,
     description: string,
-    price: number,
+    price: any,
     image: string,
     createdAt: Date,
     updatedAt: Date
@@ -11,13 +11,32 @@ export interface outputSnacks{
 
 export class SnackModels {
   constructor(
-    id: string,
-    snack: string,
-    name: string,
-    description: string,
-    price: number,
-    image: string,
-    createdAt: Date,
-    updatedAt: Date
-  ){}
+    private snack: string,
+    private name: string,
+    private description: string,
+    private price: number,
+    private image: string,
+    private createdAt: Date,
+    private updatedAt: Date
+  ){
+
+  }
+
+  public getSnack(): string {
+    return this.snack;
+  }
+  public getName(): string {
+    return this.name;
+  }
+  public getDescription(): string {
+    return this.description;
+  } public getPrice(): number {
+    return this.price;
+  } public getImage(): string {
+    return this.image;
+  } public getCreatedAt(): Date {
+    return this.createdAt;
+  } public getUpdatedAt(): Date {
+    return this.updatedAt;
+  }
 }
