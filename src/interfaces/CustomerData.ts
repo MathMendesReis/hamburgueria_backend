@@ -1,3 +1,5 @@
+import { z } from "zod"
+
 export interface CustomerData {
   fullName: string
   email: string
@@ -11,3 +13,17 @@ export interface CustomerData {
   city: string
   state: string
 }
+
+export const  CustomerDataDTO = z.object({
+  fullName: z.string().nonempty(),
+  email: z.string().nonempty(),
+  mobile: z.string().nonempty(),
+  document: z.string().nonempty(),
+  zipCode: z.string(),
+  street: z.string().nonempty(),
+  number: z.string().nonempty(),
+  complement: z.string().optional(),
+  neighborhood: z.string(),
+  city: z.string().nonempty(),
+  state: z.string().nonempty(),
+}).transform((data)=>data as CustomerData)

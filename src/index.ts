@@ -3,6 +3,7 @@ import dotenv from "dotenv"
 import express, { Express, Request, Response } from "express"
 import { snacks_router } from "./router/snacks"
 import { oder_router } from "./router/oder"
+import { checkout_router } from "./router/checkout"
 
 dotenv.config()
 
@@ -19,3 +20,4 @@ app.listen(port, () => {
 
 app.use("/snacks", snacks_router)
 app.use("/oders",oder_router)
+app.use('/checkout', checkout_router)

@@ -1,6 +1,5 @@
 export class Customer {
   constructor(
-  private id: number,
   private fullName: string,
   private email: string,
   private mobile: string,
