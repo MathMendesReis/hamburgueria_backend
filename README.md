@@ -38,6 +38,6 @@ Agradecemos pelo interesse em contribuir com o projeto Hamburgueria E-commerce B
 
 ## Contato
 
-Se você tiver alguma dúvida ou sugestão relacionada ao projeto Hamburgueria E-commerce Backend, sinta-se à vontade para entrar em contato conosco através do email seu-email@example.com ou abrir uma issue neste repositório.
+Se você tiver alguma dúvida ou sugestão relacionada ao projeto Hamburgueria E-commerce Backend, sinta-se à vontade para entrar em contato conosco através do email matehusmendesreisspa@gmail.com ou abrir uma issue neste repositório.
 
 Obrigado por utilizar o Hamburgueria E-commerce Backend! Esperamos que você tenha uma ótima experiência de desenvolvimento e sucesso com seu projeto!
